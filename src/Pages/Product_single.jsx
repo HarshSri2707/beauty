@@ -3,7 +3,7 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import { ProductData } from '../Data/Product';
 import { BlogData } from '../Data/Blog';
 import { useEffect } from 'react';
-import Placeholder from '../assets/Placeholder.webp'
+import Placeholder from '../assets/placeholder.webp'
 import { FaArrowLeft } from 'react-icons/fa';
 const Product_single = () => {
   const { id } = useParams();
