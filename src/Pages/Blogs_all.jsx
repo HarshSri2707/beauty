@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import Image from '../assets/Blogbanner.jpg';
+import Image from '../assets/blogbanner.jpg';
 import { BlogData } from '../Data/Blog';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import Placeholder from '../assets/placeholder.webp'
