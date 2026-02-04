@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+.hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+/* styles.css or inside a <style> tag */
+.blurred {
+  background: rgba(219, 39, 119, 0.8);/* Semi-transparent white for fallback rgb(219, 39, 119)*/
+  backdrop-filter: blur(4px); /* Blur effect */
+  -webkit-backdrop-filter: blur(4px);/*For Safari compatibility */
+}
+
+@keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+        @keyframes pulse {
+          0%, 100% { transform: scale(1); opacity: 0.4; }
+          50% { transform: scale(1.2); opacity: 0.7; }
+        }
+        @keyframes bounce {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-8px); }
+        }
+        .animate-spin {
+          animation: spin 1.2s linear infinite;
+        }
+        .animate-pulse {
+          animation: pulse 2s ease-in-out infinite;
+        }
+        .animate-bounce {
+          animation: bounce 0.6s ease-in-out infinite;
+        }
